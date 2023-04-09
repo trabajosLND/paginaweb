@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<script src="\ASIR\ASIR\LND\PROYECTO_SEGUNDO_TRIMESTRE\HTMLscript.js"></script>
+	<meta charset="UTF-8">
+	<title>Ejemplo de Página Web</title>
+	<style>
+		button {
+		  padding: 10px;
+		  background-color: blue;
+		  color: white;
+		  border: none;
+		  cursor: pointer;
+		}
+	
+		.cambia-color {
+		  background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Principal / Brian Diaz. </h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#seccion1">Sección 1</a></li>
+			<li><a href="#seccion2">Sección 2</a></li>
+			<li><a href="#seccion3">Sección 3</a></li>
+			<li><a href="2.html">Video explicativo.</a></li>
+			<li><a href="3.html">Historia de balonmano</a></li>
+		</ul>
+	</nav>
+	
+	</head>
+	
+
+	  <button id="boton-color">¡Haz clic aquí!</button>
+	
+	  <script>
+		document.getElementById("boton-color").addEventListener("click", function() {
+		  document.body.classList.toggle("cambia-color");
+		});
+	  </script>
+	
+	<main>
+		<section id="seccion1">
+			<h2>¿Quiénes somos?</h2>
+			<p>Somos una empresa lider en el sector de balonmano, nuestra función es realizar o rediseñar cualquier elemento que sea funcional para este deporte, realizamos desde prendas deportivas hasta accesorios para entrenamientos personalizados.</p>
+			<img src="Handball_07.jpg" class="imagen1" alt="Imagen 1">
+            <p>Tenemos afiliciación con la marca "Select" en todos los sentidos, podemos realizar cualquier diseño personalizado a gusto del cliente</p>
+		</section>
+
+		<section id="seccion2">
+			<h2>¿Cuál és nuestro sector?</h2>
+			<p>A pesar que nuestra empresa esta dirigida al sector de balonmano, también realizamos trabajos para diferentes deportes como pueden ser:</p>
+			<img src="deportes.jpg" class="imagen2"    alt="Imagen 2">
+			<ol>
+				<li>Baloncesto.</li>
+				<li>Futbol sala.</li>
+				<li>Volleyball.</li>
+			</ol>
+            <p>En general, deportes relacionados con el parquet.</p>
+		</section>
+
+		<section id="seccion3">
+			<h2>Contáctanos</h2>
+			<p>Introduce los datos en el formulario.</p>
+			<form>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre"><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje"></textarea><br>
+
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+	</body>
+</html>
